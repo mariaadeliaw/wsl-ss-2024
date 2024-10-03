@@ -1,3 +1,5 @@
+### THIS SCRIPT IS STILL UNDER CONSTRUCTION. Use the "planet-rf.R" file for the gap dynamic script
+
 library(terra)
 library(magrittr)
 library(sf)
@@ -49,7 +51,6 @@ for (i in seq_along(s2_files)) {
 gap_df <- terra::extract(ndvi[[1]], gap_reference_filtered)
 non_gap_df <- terra::extract(ndvi[[1]], non_gap_reference_filtered)
 
-ndvi_gap <- 
 # For test purposes: time series of the NDVI median
 # ndvi_median_list <- list()
 # 
